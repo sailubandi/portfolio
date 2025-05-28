@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+&nbsp;
+&nbsp;
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    
+{% block title %}Projects - My Portfolio{% endblock %}
+&nbsp;
+&nbsp;
+
+{% block content %}
+<section class="projects-list">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    {% for project in projects %}
+    <div class="project-card">
+      
+        <img src="{{ url_for('static', filename=project.image) }}" alt="{{ project.title }}">
+        <h3>{{ project.title }}</h3>
+      </a>
+      <p>{{ project.description }}</p>
+      <p class="technologies">
+        Technologies: {{ project.technologies | join(', ') }}
+      </p>
+      <a href="{{ project.url }}" target="_blank" class="btn btn-secondary">Visit Site</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+&nbsp;
+&nbsp;
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    
+{% block title %}My Resume - My Portfolio{% endblock %}
+&nbsp;
+&nbsp;
+
+{% block content %}
+<section class="resume-section">
+  <h2>My Resume</h2>
+  <iframe src="{{ url_for('static', filename='BANDI POORNA SRI SAILAJA.pdf') }}" width="100%" height="600px"></iframe>
+  <p>You can download my resume by clicking the link below.</p>
+  <a href="{{  url_for('static', filename='BANDI POORNA SRI SAILAJA.pdf') }}" class="btn">Download Resume PDF</a>
+</section>
+{% endblock %}

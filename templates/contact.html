@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+
+{% block title %}Contact Me - My Portfolio{% endblock %}
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    
+
+{% block content %}
+<section class="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="Name" required />
+
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="Email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="Message" rows="5" required></textarea>
+
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+
+  const name = encodeURIComponent(document.getElementById('name').value.trim());
+  const email = encodeURIComponent(document.getElementById('email').value.trim());
+  const message = encodeURIComponent(document.getElementById('message').value.trim());
+
+
+  if (!name || !email || !message) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+
+  const subject = `Portfolio Contact from ${name}`;
+  const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+
+  const mailtoLink = `mailto:sailubandi33@gmail.com?subject=${subject}&body=${body}`;
+
+
+  window.location.href = mailtoLink;
+});
+</script>
+{% endblock %}
+&nbsp;
+&nbsp;

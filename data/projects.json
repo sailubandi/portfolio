@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "Nutrition Recommendation System",
+      "description": "A content-based machine learning system that provides personalized diet recommendations based on individual characteristics like height, weight, and age.",
+      "technologies": ["Python"," Machine Learning"],
+      "image": "images/nutrition.png",
+      "url": "https://github.com/sailubandi/Nutrition-Recommendation-System"
+    },
+    {
+      "id": 2,
+      "title": "Amazon Data Analysis",
+      "description": "A data analysis project aimed at extracting, transforming, and analyzing Amazon sales datasets to visualize sales trends and identify key metrics and relationships among various attributes.",
+      "technologies": ["Power Bi,SQL,Excel"],
+      "image": "images/dashboard.png",
+      "url": "https://github.com/sailubandi/Amazon-Data-Analysis"
+    },
+    {
+      "id": 3,
+      "title": "Podcast Generator with Gemini AI",
+      "description": "Convert documents into podcasts using AI + Google TTS.",
+      "technologies": ["Flask", "Python", "GeminiFlash2.0"],
+      "image": "images/podcast.png",
+      "url": "https://github.com/Hackademia-2k25/Podcast-Generator"
+    },
+    {
+        "id": 4,
+        "title": "Ecommerce",
+        "description": "Online shopping experience with a user-friendly interface, smooth navigation, and a responsive design. Built with React Js.",
+        "technologies": ["React js", "BoostStrap", "JavaScript"],
+        "image": "images/ecom.png",
+        "url": "https://github.com/sailubandi/ecommerce"
+      },
+      {
+        "id": 5,
+        "title": "LinkedIn Post Generator",
+        "description": "generates professional LinkedIn posts using the Llama 3.2 model with Ollama.",
+        "technologies": ["Flask", "Python", "Llama 3.2 "],
+        "image": "images/linked.png",
+        "url": "https://github.com/sailubandi/linkedin-post-generator"
+      }
+      
+      
+  ]

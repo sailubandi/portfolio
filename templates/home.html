@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  
+{% endblock %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Hello, I'm Bandi Poorna Sri Sailaja</h1>
+    <p>Welcome to my personal portfolio website. Discover my projects and skills.</p>
+    <p>Enthusiastic about AI, ML, DL, Data Science, and Data Analysis, with a focus on applying data-driven solutions to real-world challenges</p>
+
+    <div class="social-links">
+        <h3>Connect with me:</h3>
+        <a href="https://github.com/sailubandi" target="_blank" class="btn">GitHub</a>
+        <a href="https://linkedin.com/in/sailubandi" target="_blank" class="btn">LinkedIn</a>
+    </div>
+
+ 
+</section>
+{% endblock %}
